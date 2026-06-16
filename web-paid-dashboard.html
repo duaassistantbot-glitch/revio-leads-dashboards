@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rev.io Website / Paid Media Leads Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1D3756;--teal:#2399B5;--green:#6EBE4F;--purple:#7c3aed;--orange:#e67e22;--platinum:#E8E8EC;--body:#3d4d5c;--light:#F5F7FA;--border:#DDE2E8;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Open Sans',Arial,sans-serif;background:var(--light);color:var(--body);font-size:13px}
+.stripe{height:4px;background:linear-gradient(90deg,#2399B5 0%,#7c3aed 100%);flex-shrink:0}
+header{background:var(--navy);color:#fff;padding:24px 40px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.3px}
+header .sub{font-size:12px;color:var(--platinum);margin-top:4px;opacity:.85}
+header .meta{font-size:11px;color:var(--platinum);text-align:right;opacity:.7}
+.container{max-width:1700px;margin:0 auto;padding:24px 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:20px}
+.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;border-top:3px solid var(--teal)}
+.card.green{border-top-color:var(--green)}.card.red{border-top-color:#c0392b}.card.orange{border-top-color:var(--orange)}.card.purple{border-top-color:var(--purple)}
+.card .num{font-family:'Montserrat',Arial,sans-serif;font-size:30px;font-weight:800;color:var(--teal);line-height:1}
+.card.green .num{color:var(--green)}.card.red .num{color:#c0392b}.card.orange .num{color:var(--orange)}.card.purple .num{color:var(--purple)}
+.card .lbl{font-size:10px;color:#888;margin-top:5px;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.alert{background:#fff;border:1px solid var(--border);border-left:4px solid var(--purple);border-radius:8px;padding:14px 20px;margin-bottom:20px;display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.alert-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--navy)}
+.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;color:#fff}
+.pill-red{background:#c0392b}.pill-orange{background:var(--orange)}
+.filters{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 20px;margin-bottom:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.fg{display:flex;flex-direction:column;gap:4px}
+.fg label{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.5px}
+.filters select,.filters input{border:1px solid var(--border);border-radius:6px;padding:7px 10px;font-size:13px;background:#fff;font-family:'Open Sans',Arial,sans-serif;color:var(--navy)}
+.filters select:focus,.filters input:focus{outline:none;border-color:var(--teal)}
+.btn-reset{background:var(--light);border:1px solid var(--border);border-radius:6px;padding:7px 16px;cursor:pointer;font-size:13px;font-family:'Open Sans',Arial,sans-serif;color:var(--navy);font-weight:600}
+.btn-reset:hover{background:var(--border)}
+.tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:2px solid var(--border)}
+.tab{padding:9px 18px;cursor:pointer;font-size:13px;font-weight:600;border-bottom:2px solid transparent;margin-bottom:-2px;color:#888;font-family:'Open Sans',Arial,sans-serif}
+.tab.active{color:var(--teal);border-bottom-color:var(--teal)}
+.tab:hover{color:var(--navy)}
+.table-wrap{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.tinfo{padding:10px 18px;background:var(--light);border-bottom:1px solid var(--border);font-size:12px;color:#888;display:flex;justify-content:space-between;align-items:center}
+.tinfo span{color:var(--teal);font-size:11px;font-weight:600}
+table{width:100%;border-collapse:collapse}
+th{background:var(--navy);padding:10px 12px;text-align:left;font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid var(--border);cursor:pointer;white-space:nowrap}
+th:hover{background:#2a4d6e}
+td{padding:9px 12px;border-bottom:1px solid #f0f2f5;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#f9fbfc}
+.b{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap}
+.b-web{background:#ede9fe;color:#5b21b6}
+.b-paid{background:#dbeafe;color:#1e40af}
+.b-demo{background:#d1fae5;color:#065f46}
+.b-contact{background:#fef3c7;color:#92400e}
+.b-fb{background:#dbeafe;color:#1e40af}
+.b-google{background:#fee2e2;color:#991b1b}
+.b-li{background:#e0f2fe;color:#0369a1}
+.b-mql{background:#dbeafe;color:#1e40af}
+.b-sql{background:#d1fae5;color:#065f46}
+.b-y{background:#d1fae5;color:#065f46}
+.b-n{background:#fee2e2;color:#991b1b}
+.b-inp{background:#fef3c7;color:#92400e}
+.b-rec{background:#f3f4f6;color:#6b7280}
+.b-new{background:#ede9fe;color:#5b21b6}
+.b-na{background:#f3f4f6;color:#9ca3af}
+.b-week{background:#f0fdf4;color:#166534;font-size:10px}
+a{color:var(--teal);text-decoration:none;font-weight:600}
+a:hover{text-decoration:underline}
+.no-res{padding:48px;text-align:center;color:#aaa;font-size:14px}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header>
+  <div>
+    <h1>🌐 Rev.io Website / Paid Media Leads Dashboard</h1>
+    <div class="sub">2026 Contacts · Marketing Source: Website & Paid Media · Grouped by Conversion Week · Generated by Dua</div>
+  </div>
+  <div class="meta">Rev.io Revenue Operations<br><span id="gdate"></span></div>
+</header>
+
+<div class="container">
+
+  <div class="alert">
+    <div class="alert-item">🚨 <strong id="a1">0</strong> SQL contacts with no opportunity <span class="pill pill-red">Create Opp Now</span></div>
+    <div class="alert-item">⚠️ <strong id="a2">0</strong> contacts stuck <em>In Progress</em> <span class="pill pill-orange">Needs Action</span></div>
+    <div class="alert-item">📋 <strong id="a3">0</strong> contacts with zero follow-up activity</div>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="num" id="ct">0</div><div class="lbl">Total Contacts</div></div>
+    <div class="card purple"><div class="num" id="cw">0</div><div class="lbl">Website</div></div>
+    <div class="card"><div class="num" id="cp">0</div><div class="lbl">Paid Media</div></div>
+    <div class="card green"><div class="num" id="cy">0</div><div class="lbl">Opp Created ✅</div></div>
+    <div class="card red"><div class="num" id="cn">0</div><div class="lbl">No Opp ❌</div></div>
+    <div class="card orange"><div class="num" id="cs">0</div><div class="lbl">SQL No Opp 🚨</div></div>
+    <div class="card"><div class="num" id="ca">0</div><div class="lbl">Avg Activities</div></div>
+  </div>
+
+  <div class="filters">
+    <div class="fg"><label>Marketing Source</label><select id="fsource"><option value="">All Sources</option><option>Website</option><option>Paid Media</option></select></div>
+    <div class="fg"><label>Sub-Source</label><select id="fsubsource"><option value="">All Sub-Sources</option></select></div>
+    <div class="fg"><label>Conv. Week</label><select id="fweek"><option value="">All Weeks</option></select></div>
+    <div class="fg"><label>Owner</label><select id="fowner"><option value="">All Owners</option></select></div>
+    <div class="fg"><label>Contact Status</label><select id="fstatus"><option value="">All</option><option>MQL</option><option>SQL</option></select></div>
+    <div class="fg"><label>Contact Stage</label><select id="fstage"><option value="">All</option><option>In Progress</option><option>New</option><option>Recycled</option></select></div>
+    <div class="fg"><label>Opp?</label><select id="fopp"><option value="">All</option><option value="Y">Y - Has Opp</option><option value="N">N - No Opp</option></select></div>
+    <div class="fg"><label>Search</label><input type="text" id="fsearch" placeholder="Name, company, email..."/></div>
+    <button class="btn-reset" onclick="reset()">↺ Reset</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="setTab('all')" id="tab-all">All Contacts</div>
+    <div class="tab" onclick="setTab('sql')" id="tab-sql">🚨 SQL No Opp</div>
+    <div class="tab" onclick="setTab('noopp')" id="tab-noopp">No Opportunity</div>
+    <div class="tab" onclick="setTab('noact')" id="tab-noact">Zero Activity</div>
+  </div>
+
+  <div class="table-wrap">
+    <div class="tinfo">
+      <span id="rcount" style="color:var(--navy);font-weight:700;font-size:13px">Loading...</span>
+      <span>Click headers to sort &nbsp;·&nbsp; Names link to Salesforce</span>
+    </div>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr>
+          <th onclick="sort('conversionWeek')">Conv. Week</th>
+          <th onclick="sort('marketingSource')">Source</th>
+          <th onclick="sort('subSource')">Sub-Source</th>
+          <th onclick="sort('owner')">Owner</th>
+          <th onclick="sort('lastName')">Contact</th>
+          <th onclick="sort('accountName')">Account</th>
+          <th onclick="sort('contactStatus')">Status</th>
+          <th onclick="sort('contactStage')">Stage</th>
+          <th onclick="sort('oppStatus')">Opp?</th>
+          <th onclick="sort('activitiesAfterConv')">Activities After Conv.</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="stripe" style="margin-top:32px"></div>
+<footer style="background:var(--navy);padding:14px 40px;text-align:center">
+  <span style="font-size:11px;color:var(--platinum);opacity:.6">Rev.io Revenue Operations &nbsp;·&nbsp; Generated by Dua &nbsp;·&nbsp; Data source: Salesforce CRM</span>
+</footer>
+
+<script>
+const DATA = [{"id":"003PX000014Egd2YAC","sfUrl":"https://rev-io.my.salesforce.com/003PX000014Egd2YAC","firstName":"JUSTIN","lastName":"Gorkic","email":"justing@ithryn.tech","title":"","accountId":"001PX00000lU5QbYAK","accountName":"Ithryn Technologies","accountUrl":"https://rev-io.my.salesforce.com/001PX00000lU5QbYAK","marketingSource":"Paid Media","subSource":"Google Ads","conversionDate":"2026-04-26","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"SQL","contactStage":"In Progress","owner":"Jamie Butler","oppCount":0,"oppStatus":"N","activitiesAfterConv":2,"callsAfterConv":0,"emailsAfterConv":1},{"id":"003PX000014Av9kYAC","sfUrl":"https://rev-io.my.salesforce.com/003PX000014Av9kYAC","firstName":"Mason","lastName":"Garten","email":"mgarten@sctelcom.com","title":"","accountId":"001PX00000lRry1YAC","accountName":"Sctelcom","accountUrl":"https://rev-io.my.salesforce.com/001PX00000lRry1YAC","marketingSource":"Website","subSource":"Contact Us","conversionDate":"2026-04-25","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"MQL","contactStage":"In Progress","owner":"Jamie Butler","oppCount":0,"oppStatus":"N","activitiesAfterConv":3,"callsAfterConv":0,"emailsAfterConv":1},{"id":"003PX000014AbaWYAS","sfUrl":"https://rev-io.my.salesforce.com/003PX000014AbaWYAS","firstName":"John","lastName":"Yi","email":"jyi@mvnoc.com","title":"Director of Business Development","accountId":"001PX00000Tl58PYAR","accountName":"MVNO Connect","accountUrl":"https://rev-io.my.salesforce.com/001PX00000Tl58PYAR","marketingSource":"Paid Media","subSource":"LinkedIn Ads","conversionDate":"2026-04-24","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"MQL","contactStage":"New","owner":"Connor Flynn","oppCount":0,"oppStatus":"N","activitiesAfterConv":3,"callsAfterConv":0,"emailsAfterConv":1},{"id":"003PX0000142WaTYAU","sfUrl":"https://rev-io.my.salesforce.com/003PX0000142WaTYAU","firstName":"Stephanie","lastName":"Gilbert","email":"stephanie.gilbert@nwsnext.com","title":"VP, Client Engagement and Strategy","accountId":"001PX00000lOsDtYAK","accountName":"Axiom Consulting Group","accountUrl":"https://rev-io.my.salesforce.com/001PX00000lOsDtYAK","marketingSource":"Paid Media","subSource":"LinkedIn Ads","conversionDate":"2026-04-23","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"MQL","contactStage":"In Progress","owner":"Connor Flynn","oppCount":0,"oppStatus":"N","activitiesAfterConv":4,"callsAfterConv":1,"emailsAfterConv":2},{"id":"003PX000013zqwZYAQ","sfUrl":"https://rev-io.my.salesforce.com/003PX000013zqwZYAQ","firstName":"Adams","lastName":"Eric","email":"a.eric@northwestu-edu.com","title":"","accountId":"001PX00000TqSdrYAF","accountName":"SPAM / Disqualified","accountUrl":"https://rev-io.my.salesforce.com/001PX00000TqSdrYAF","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-23","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Patrick Davies","oppCount":0,"oppStatus":"N","activitiesAfterConv":1,"callsAfterConv":0,"emailsAfterConv":0},{"id":"003PX000013qFBVYA2","sfUrl":"https://rev-io.my.salesforce.com/003PX000013qFBVYA2","firstName":"Guillermo","lastName":"Sandoval","email":"g.sandoval@getdialedin.com","title":"","accountId":"001PX00000lGJTTYA4","accountName":"DialedIn","accountUrl":"https://rev-io.my.salesforce.com/001PX00000lGJTTYA4","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-22","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"SQL","contactStage":"In Progress","owner":"Connor Flynn","oppCount":1,"oppStatus":"Y","activitiesAfterConv":1,"callsAfterConv":0,"emailsAfterConv":0},{"id":"003PX000013an8vYAA","sfUrl":"https://rev-io.my.salesforce.com/003PX000013an8vYAA","firstName":"mario","lastName":"simmons","email":"mariosimmon@parrk-analytics.com","title":"","accountId":"001PX00000l6O9RYAU","accountName":"Parrk Analytics","accountUrl":"https://rev-io.my.salesforce.com/001PX00000l6O9RYAU","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-20","conversionWeek":"Week of Apr 20 – Apr 26","weekStart":"2026-04-20","contactStatus":"MQL","contactStage":"In Progress","owner":"Andy Whisenant","oppCount":0,"oppStatus":"N","activitiesAfterConv":2,"callsAfterConv":0,"emailsAfterConv":1},{"id":"003PX000013PAasYAG","sfUrl":"https://rev-io.my.salesforce.com/003PX000013PAasYAG","firstName":"Charles","lastName":"Myers","email":"charles_myers@tcbs1.com","title":"","accountId":"001PX00000l6WlLYAU","accountName":"TCBS","accountUrl":"https://rev-io.my.salesforce.com/001PX00000l6WlLYAU","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-18","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"SQL","contactStage":"In Progress","owner":"Connor Flynn","oppCount":1,"oppStatus":"Y","activitiesAfterConv":1,"callsAfterConv":0,"emailsAfterConv":0},{"id":"003PX000013N1zDYAS","sfUrl":"https://rev-io.my.salesforce.com/003PX000013N1zDYAS","firstName":"Chris","lastName":"Fassler","email":"cfassler@pinn360.com","title":"","accountId":"001PX00000igwteYAA","accountName":"Pinnacle Communications Corporation","accountUrl":"https://rev-io.my.salesforce.com/001PX00000igwteYAA","marketingSource":"Paid Media","subSource":"Google Ads","conversionDate":"2026-04-17","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"MQL","contactStage":"In Progress","owner":"Connor Flynn","oppCount":0,"oppStatus":"N","activitiesAfterConv":3,"callsAfterConv":1,"emailsAfterConv":1},{"id":"0031C00003OfGgzQAF","sfUrl":"https://rev-io.my.salesforce.com/0031C00003OfGgzQAF","firstName":"BARRY","lastName":"A BROWN","email":"barry@phoneco.com","title":"President","accountId":"0011C00002xtRlIQAU","accountName":"Mountain Telecom","accountUrl":"https://rev-io.my.salesforce.com/0011C00002xtRlIQAU","marketingSource":"Paid Media","subSource":"Google Ads","conversionDate":"2026-04-16","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"Client","contactStage":"In Progress","owner":"Justin Lee","oppCount":0,"oppStatus":"N","activitiesAfterConv":10,"callsAfterConv":2,"emailsAfterConv":8},{"id":"003PX00000uQYRUYA4","sfUrl":"https://rev-io.my.salesforce.com/003PX00000uQYRUYA4","firstName":"PEDRO RUI","lastName":"CUNHA","email":"pcunha@broadvoice.com","title":"","accountId":"0011500001ZIG6jAAH","accountName":"Broadvoice","accountUrl":"https://rev-io.my.salesforce.com/0011500001ZIG6jAAH","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-15","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"Client","contactStage":"","owner":"Connor Flynn","oppCount":0,"oppStatus":"N","activitiesAfterConv":9,"callsAfterConv":8,"emailsAfterConv":0},{"id":"003PX0000136g41YAA","sfUrl":"https://rev-io.my.salesforce.com/003PX0000136g41YAA","firstName":"Mark","lastName":"Aldmour","email":"maldmour@netiia.com","title":"","accountId":"001PX00000knFKdYAM","accountName":"Netiia","accountUrl":"https://rev-io.my.salesforce.com/001PX00000knFKdYAM","marketingSource":"Paid Media","subSource":"Google Ads","conversionDate":"2026-04-15","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"SQL","contactStage":"In Progress","owner":"Andy Whisenant","oppCount":0,"oppStatus":"N","activitiesAfterConv":8,"callsAfterConv":5,"emailsAfterConv":2},{"id":"003PX00000zEngrYAC","sfUrl":"https://rev-io.my.salesforce.com/003PX00000zEngrYAC","firstName":"Tessa","lastName":"Aldridge","email":"tessa.aldridge@newbusinesssphere.com","title":"","accountId":"001PX00000iN85BYAS","accountName":"New Business Sphere","accountUrl":"https://rev-io.my.salesforce.com/001PX00000iN85BYAS","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-14","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Jamie Butler","oppCount":0,"oppStatus":"N","activitiesAfterConv":1,"callsAfterConv":0,"emailsAfterConv":0},{"id":"0036O000046aLZkQAM","sfUrl":"https://rev-io.my.salesforce.com/0036O000046aLZkQAM","firstName":"Ernest","lastName":"Daw","email":"edaw@etech.cc","title":"","accountId":"0011500001HNQIUAA5","accountName":"E Tech Communications","accountUrl":"https://rev-io.my.salesforce.com/0011500001HNQIUAA5","marketingSource":"Website","subSource":"Contact Us","conversionDate":"2026-04-13","conversionWeek":"Week of Apr 13 – Apr 19","weekStart":"2026-04-13","contactStatus":"","contactStage":"New","owner":"Justin Lee","oppCount":0,"oppStatus":"N","activitiesAfterConv":0,"callsAfterConv":0,"emailsAfterConv":0},{"id":"003PX000012pJCqYAM","sfUrl":"https://rev-io.my.salesforce.com/003PX000012pJCqYAM","firstName":"Dibyesh","lastName":"Giri","email":"dibyesh@getfueleo.com","title":"Founder & CEO","accountId":"001PX00000kcDwFYAU","accountName":"GetFueleo","accountUrl":"https://rev-io.my.salesforce.com/001PX00000kcDwFYAU","marketingSource":"Paid Media","subSource":"LinkedIn Ads","conversionDate":"2026-04-12","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Ardit Berdyna","oppCount":0,"oppStatus":"N","activitiesAfterConv":3,"callsAfterConv":0,"emailsAfterConv":2},{"id":"003PX000012g30iYAA","sfUrl":"https://rev-io.my.salesforce.com/003PX000012g30iYAA","firstName":"Jaime","lastName":"Vasquez","email":"jaime@cloudsolutionpros.com","title":"","accountId":"001PX00000kWQg2YAG","accountName":"Cloud Solution Pros","accountUrl":"https://rev-io.my.salesforce.com/001PX00000kWQg2YAG","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-10","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"SQL","contactStage":"Recycled","owner":"Andy Whisenant","oppCount":0,"oppStatus":"N","activitiesAfterConv":2,"callsAfterConv":0,"emailsAfterConv":1},{"id":"003PX000012aX92YAE","sfUrl":"https://rev-io.my.salesforce.com/003PX000012aX92YAE","firstName":"Sarah","lastName":"Cedillo","email":"scedillo@cogentanalytics.com","title":"","accountId":"001PX00000kSMj3YAG","accountName":"Cogent Analytics","accountUrl":"https://rev-io.my.salesforce.com/001PX00000kSMj3YAG","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-09","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Marketing Rev.io","oppCount":0,"oppStatus":"N","activitiesAfterConv":2,"callsAfterConv":1,"emailsAfterConv":0},{"id":"003PX000012Uz0RYAS","sfUrl":"https://rev-io.my.salesforce.com/003PX000012Uz0RYAS","firstName":"Ben","lastName":"Jacobellis","email":"ben@escsinc.com","title":"","accountId":"001PX00000JKug6YAD","accountName":"Electronic Security Control Systems","accountUrl":"https://rev-io.my.salesforce.com/001PX00000JKug6YAD","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-08","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"MQL","contactStage":"Recycled","owner":"Jake Borah","oppCount":0,"oppStatus":"N","activitiesAfterConv":11,"callsAfterConv":3,"emailsAfterConv":5},{"id":"0036O000046aJflQAE","sfUrl":"https://rev-io.my.salesforce.com/0036O000046aJflQAE","firstName":"Greg","lastName":"Ferrante","email":"greg@uspbx.com","title":"Chief Executive Officer (CEO)","accountId":"0016O00003dmpHJQAY","accountName":"Blue Water Networks","accountUrl":"https://rev-io.my.salesforce.com/0016O00003dmpHJQAY","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-08","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"Client","contactStage":"In Progress","owner":"Andy Whisenant","oppCount":5,"oppStatus":"Y","activitiesAfterConv":4,"callsAfterConv":3,"emailsAfterConv":1},{"id":"003PX000012K5TOYA0","sfUrl":"https://rev-io.my.salesforce.com/003PX000012K5TOYA0","firstName":"William","lastName":"Hansen Begg","email":"will.hb@cor5systems.com","title":"","accountId":"001PX00000lGREMYA4","accountName":"Cor5 Systems Group","accountUrl":"https://rev-io.my.salesforce.com/001PX00000lGREMYA4","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-06","conversionWeek":"Week of Apr 6 – Apr 12","weekStart":"2026-04-06","contactStatus":"SQL","contactStage":"In Progress","owner":"Patrick Davies","oppCount":1,"oppStatus":"Y","activitiesAfterConv":6,"callsAfterConv":1,"emailsAfterConv":4},{"id":"003PX000012FOCyYAO","sfUrl":"https://rev-io.my.salesforce.com/003PX000012FOCyYAO","firstName":"Jay","lastName":"Bakst","email":"jay.bakst@eisneramper.com","title":"Partner","accountId":"001PX00000AAHUrYAP","accountName":"EisnerAmper","accountUrl":"https://rev-io.my.salesforce.com/001PX00000AAHUrYAP","marketingSource":"Paid Media","subSource":"LinkedIn Ads","conversionDate":"2026-04-05","conversionWeek":"Week of Mar 30 – Apr 5","weekStart":"2026-03-30","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Jake Mitchell","oppCount":0,"oppStatus":"N","activitiesAfterConv":7,"callsAfterConv":0,"emailsAfterConv":6},{"id":"003PX00000uUjlYYAS","sfUrl":"https://rev-io.my.salesforce.com/003PX00000uUjlYYAS","firstName":"Max","lastName":"Kichikov","email":"max@dmhoop.com","title":"","accountId":"001PX00000TqSdrYAF","accountName":"SPAM / Disqualified","accountUrl":"https://rev-io.my.salesforce.com/001PX00000TqSdrYAF","marketingSource":"Website","subSource":"Contact Us","conversionDate":"2026-04-02","conversionWeek":"Week of Mar 30 – Apr 5","weekStart":"2026-03-30","contactStatus":"Disqualified","contactStage":"Disqualified","owner":"Marketing Rev.io","oppCount":0,"oppStatus":"N","activitiesAfterConv":3,"callsAfterConv":0,"emailsAfterConv":2},{"id":"003PX000011riRiYAI","sfUrl":"https://rev-io.my.salesforce.com/003PX000011riRiYAI","firstName":"Patrick","lastName":"MeLampy","email":"patrickmelampy@maiaedge.io","title":"CFO","accountId":"001PX00000jzLf8YAE","accountName":"MaiaEdge","accountUrl":"https://rev-io.my.salesforce.com/001PX00000jzLf8YAE","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-01","conversionWeek":"Week of Mar 30 – Apr 5","weekStart":"2026-03-30","contactStatus":"SQL","contactStage":"In Progress","owner":"Jamie Butler","oppCount":1,"oppStatus":"Y","activitiesAfterConv":5,"callsAfterConv":1,"emailsAfterConv":3},{"id":"003PX000011slsOYAQ","sfUrl":"https://rev-io.my.salesforce.com/003PX000011slsOYAQ","firstName":"Edwin","lastName":"Anonuevo","email":"ed@ortana.tv","title":"","accountId":"001PX00000k0BgwYAE","accountName":"Ortana Media Group","accountUrl":"https://rev-io.my.salesforce.com/001PX00000k0BgwYAE","marketingSource":"Website","subSource":"Request Demo","conversionDate":"2026-04-01","conversionWeek":"Week of Mar 30 – Apr 5","weekStart":"2026-03-30","contactStatus":"SQL","contactStage":"In Progress","owner":"Marketing Rev.io","oppCount":1,"oppStatus":"Y","activitiesAfterConv":15,"callsAfterConv":6,"emailsAfterConv":8}];
+
+let tab='all', sc='weekStart', sd=-1;
+
+document.getElementById('gdate').textContent = new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+
+// Populate filters
+const weeks  = [...new Set(DATA.map(d=>d.conversionWeek).filter(Boolean))].sort((a,b)=>b.localeCompare(a));
+const subsources = [...new Set(DATA.map(d=>d.subSource).filter(Boolean))].sort();
+const owners = [...new Set(DATA.map(d=>d.owner).filter(Boolean))].sort();
+weeks.forEach(s=>{const o=document.createElement('option');o.textContent=s;o.value=s;document.getElementById('fweek').appendChild(o)});
+subsources.forEach(s=>{const o=document.createElement('option');o.textContent=s;document.getElementById('fsubsource').appendChild(o)});
+owners.forEach(s=>{const o=document.createElement('option');o.textContent=s;document.getElementById('fowner').appendChild(o)});
+
+function b(cls,txt){return '<span class="b '+cls+'">'+txt+'</span>'}
+
+function sourceB(s) {
+  if(!s) return b('b-na','—');
+  return s==='Website' ? b('b-web','🌐 Website') : b('b-paid','💰 Paid Media');
+}
+function subB(s) {
+  if(!s) return b('b-na','—');
+  if(s==='Request Demo') return b('b-demo','Request Demo');
+  if(s==='Contact Us') return b('b-contact','Contact Us');
+  if(s==='Facebook Ads') return b('b-fb','📘 Facebook');
+  if(s==='Google Ads') return b('b-google','🔍 Google');
+  if(s==='LinkedIn Ads') return b('b-li','💼 LinkedIn');
+  return b('b-na',s);
+}
+function statusB(s){if(!s)return b('b-na','—');return s==='MQL'?b('b-mql','MQL'):s==='SQL'?b('b-sql','SQL'):b('b-na',s)}
+function stageB(s){if(!s)return b('b-na','—');return s==='In Progress'?b('b-inp','In Progress'):s==='Recycled'?b('b-rec','Recycled'):s==='New'?b('b-new','New'):b('b-na',s)}
+
+function getFiltered() {
+  const fs2=document.getElementById('fsource').value,
+    fsub=document.getElementById('fsubsource').value,
+    fw=document.getElementById('fweek').value,
+    fo=document.getElementById('fowner').value,
+    fst=document.getElementById('fstatus').value,
+    fsg=document.getElementById('fstage').value,
+    fp=document.getElementById('fopp').value,
+    fq=document.getElementById('fsearch').value.toLowerCase();
+  return DATA.filter(d=>{
+    if(fs2&&d.marketingSource!==fs2)return false;
+    if(fsub&&d.subSource!==fsub)return false;
+    if(fw&&d.conversionWeek!==fw)return false;
+    if(fo&&d.owner!==fo)return false;
+    if(fst&&d.contactStatus!==fst)return false;
+    if(fsg&&d.contactStage!==fsg)return false;
+    if(fp&&d.oppStatus!==fp)return false;
+    if(tab==='sql'&&!(d.contactStatus==='SQL'&&d.oppStatus==='N'))return false;
+    if(tab==='noopp'&&d.oppStatus!=='N')return false;
+    if(tab==='noact'&&d.activitiesAfterConv>0)return false;
+    if(fq){const h=(d.firstName+' '+d.lastName+' '+d.accountName+' '+d.email+' '+d.owner+' '+d.subSource).toLowerCase();if(!h.includes(fq))return false}
+    return true;
+  });
+}
+
+function render() {
+  let d = getFiltered();
+  d.sort((a,z)=>{
+    const av=(a[sc]||'').toString().toLowerCase(), bv=(z[sc]||'').toString().toLowerCase();
+    return av<bv?-sd:av>bv?sd:0;
+  });
+  const tbody = document.getElementById('tbody');
+  document.getElementById('rcount').textContent = d.length + ' contacts';
+  if(!d.length){tbody.innerHTML='<tr><td colspan="10" class="no-res">No contacts match the current filters</td></tr>';return}
+  tbody.innerHTML = d.map(c => {
+    const actCell = c.activitiesAfterConv > 0
+      ? '<span style="font-weight:700;color:var(--navy)">'+c.activitiesAfterConv+'</span>'+
+        '<br><span style="font-size:10px;color:#888">'+
+        (c.callsAfterConv?'📞 '+c.callsAfterConv:'')+
+        (c.callsAfterConv&&c.emailsAfterConv?' · ':'')+
+        (c.emailsAfterConv?'✉️ '+c.emailsAfterConv:'')+
+        '</span>'
+      : '<span style="color:#ccc">0</span>';
+    return '<tr>'+
+      '<td>'+b('b-week', c.conversionWeek||'—')+'</td>'+
+      '<td>'+sourceB(c.marketingSource)+'</td>'+
+      '<td>'+subB(c.subSource)+'</td>'+
+      '<td style="font-weight:600;color:var(--navy);font-size:12px">'+c.owner+'</td>'+
+      '<td><a href="'+c.sfUrl+'" target="_blank">'+c.firstName+' '+c.lastName+'</a>'+
+        (c.email?'<br><span style="color:#9ca3af;font-size:11px;font-weight:400">'+c.email+'</span>':'')+'</td>'+
+      '<td>'+(c.accountUrl?'<a href="'+c.accountUrl+'" target="_blank">'+c.accountName+'</a>':c.accountName||'—')+'</td>'+
+      '<td>'+statusB(c.contactStatus)+'</td>'+
+      '<td>'+stageB(c.contactStage)+'</td>'+
+      '<td>'+b(c.oppStatus==='Y'?'b-y':'b-n',c.oppStatus)+'</td>'+
+      '<td style="text-align:center">'+actCell+'</td>'+
+      '</tr>';
+  }).join('');
+}
+
+function updateStats() {
+  document.getElementById('ct').textContent = DATA.length;
+  document.getElementById('cw').textContent = DATA.filter(x=>x.marketingSource==='Website').length;
+  document.getElementById('cp').textContent = DATA.filter(x=>x.marketingSource==='Paid Media').length;
+  document.getElementById('cy').textContent = DATA.filter(x=>x.oppStatus==='Y').length;
+  document.getElementById('cn').textContent = DATA.filter(x=>x.oppStatus==='N').length;
+  document.getElementById('cs').textContent = DATA.filter(x=>x.contactStatus==='SQL'&&x.oppStatus==='N').length;
+  const avg = DATA.length ? (DATA.reduce((s,c)=>s+c.activitiesAfterConv,0)/DATA.length).toFixed(1) : 0;
+  document.getElementById('ca').textContent = avg;
+  document.getElementById('a1').textContent = DATA.filter(x=>x.contactStatus==='SQL'&&x.oppStatus==='N').length;
+  document.getElementById('a2').textContent = DATA.filter(x=>x.contactStage==='In Progress').length;
+  document.getElementById('a3').textContent = DATA.filter(x=>x.activitiesAfterConv===0).length;
+}
+
+function setTab(t){
+  tab=t;
+  ['all','sql','noopp','noact'].forEach(x=>document.getElementById('tab-'+x).classList.remove('active'));
+  document.getElementById('tab-'+t).classList.add('active');
+  render();
+}
+
+function sort(col){if(sc===col)sd*=-1;else{sc=col;sd=1}render()}
+
+function reset(){
+  ['fsource','fsubsource','fweek','fowner','fstatus','fstage','fopp'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('fsearch').value='';
+  setTab('all');
+}
+
+['fsource','fsubsource','fweek','fowner','fstatus','fstage','fopp'].forEach(id=>{
+  document.getElementById(id).addEventListener('change',render);
+});
+document.getElementById('fsearch').addEventListener('input',render);
+
+updateStats();
+render();
+</script>
+</body>
+</html>
