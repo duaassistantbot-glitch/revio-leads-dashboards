@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pax8 Beyond 26 One-Pager</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1D3756;
+    --teal: #2399B5;
+    --green: #6EBE4F;
+    --body: #3d4d5c;
+    --light: #F5F7FA;
+    --border: #DDE2E8;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #dfe5ec;
+    color: var(--body);
+    font-family: "Nunito Sans", Arial, sans-serif;
+  }
+  .page {
+    width: 816px;
+    min-height: 1056px;
+    margin: 24px auto;
+    background: var(--white);
+    box-shadow: 0 20px 50px rgba(29,55,86,.16);
+    overflow: hidden;
+  }
+  .stripe { height: 5px; background: linear-gradient(90deg, #2399B5 0%, #6EBE4F 100%); }
+  header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 28px 34px 24px;
+  }
+  .eyebrow {
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  h1 {
+    color: var(--white);
+    font-size: 34px;
+    line-height: 1.05;
+    margin: 8px 0 10px;
+    font-weight: 900;
+  }
+  .subtitle {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 660px;
+  }
+  main { padding: 24px 34px 28px; }
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .kpi {
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--teal);
+    border-radius: 8px;
+    padding: 12px 10px;
+    min-height: 94px;
+  }
+  .kpi.green { border-top-color: var(--green); }
+  .kpi .number {
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .kpi .label {
+    color: var(--body);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+  .kpi .note {
+    color: #667789;
+    font-size: 11px;
+    line-height: 1.25;
+    margin-top: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  section {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--white);
+  }
+  section.wide { grid-column: 1 / -1; }
+  h2 {
+    background: var(--light);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 900;
+    margin: 0;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  th {
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .4px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #eef2f6;
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: 0; }
+  .bar {
+    background: #e9f6fa;
+    border-radius: 999px;
+    height: 7px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .fill { background: var(--teal); height: 100%; }
+  .insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 12px;
+  }
+  .insight {
+    border-left: 4px solid var(--green);
+    background: var(--light);
+    padding: 10px;
+    min-height: 82px;
+  }
+  .insight strong {
+    display: block;
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+  .insight span {
+    display: block;
+    color: var(--body);
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .footer {
+    margin-top: 14px;
+    color: #667789;
+    font-size: 9.5px;
+    line-height: 1.35;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    background: #fbfcfe;
+  }
+  .controls select,
+  .controls input {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--navy);
+    font: 700 11px "Nunito Sans", Arial, sans-serif;
+    padding: 6px 8px;
+    min-width: 118px;
+  }
+  .contacts-wrap {
+    max-height: 310px;
+    overflow: auto;
+  }
+  .contact-table th {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    cursor: pointer;
+  }
+  .muted { color: #667789; }
+  @media print {
+    body { background: var(--white); }
+    .page { margin: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<article class="page">
+  <div class="stripe"></div>
+  <header>
+    <div class="eyebrow">Rev.io Tradeshow Performance</div>
+    <h1>Pax8 Beyond 26</h1>
+    <div class="subtitle">Salesforce contacts where Marketing Source is Tradeshow and Marketing Sub-source is Pax8 Beyond 26. Analysis is limited to Hot Lead and Warm Lead tradeshow statuses.</div>
+  </header>
+  <main>
+    <div class="kpis">
+      <div class="kpi"><div class="number">58</div><div class="label">Hot + Warm Leads</div><div class="note">25 Hot / 33 Warm</div></div>
+      <div class="kpi green"><div class="number">19</div><div class="label">Discovery Calls Set</div><div class="note">19 discovery call events after conversion</div></div>
+      <div class="kpi"><div class="number">15</div><div class="label">Opps Created</div><div class="note">$15,000 total / $1,000 avg</div></div>
+      <div class="kpi green"><div class="number">1</div><div class="label">Cross-Sell Leads</div><div class="note">Client accounts with tradeshow opps</div></div>
+    </div>
+
+    <div class="grid">
+      <section>
+        <h2>Industry Breakdown</h2>
+        <table>
+          <thead><tr><th>Industry</th><th>Contacts</th><th>Share</th></tr></thead>
+          <tbody>
+    <tr>
+      <td>MSP - No Voice</td>
+      <td>46</td>
+      <td>79%<div class="bar"><div class="fill" style="width:79%"></div></div></td>
+    </tr>
+    <tr>
+      <td>UCaaS / Voip</td>
+      <td>6</td>
+      <td>10%<div class="bar"><div class="fill" style="width:10%"></div></div></td>
+    </tr>
+    <tr>
+      <td>MSP - Voice</td>
+      <td>2</td>
+      <td>3%<div class="bar"><div class="fill" style="width:3%"></div></div></td>
+    </tr>
+    <tr>
+      <td>Business Support Services</td>
+      <td>1</td>
+      <td>2%<div class="bar"><div class="fill" style="width:2%"></div></div></td>
+    </tr>
+    <tr>
+      <td>MSP - UCaaS / Voip</td>
+      <td>1</td>
+      <td>2%<div class="bar"><div class="fill" style="width:2%"></div></div></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1</td>
+      <td>2%<div class="bar"><div class="fill" style="width:2%"></div></div></td>
+    </tr>
+    <tr>
+      <td>Security Integrator</td>
+      <td>1</td>
+      <td>2%<div class="bar"><div class="fill" style="width:2%"></div></div></td>
+    </tr></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Vertical Breakdown</h2>
+        <table>
+          <thead><tr><th>Vertical</th><th>Contacts</th><th>Share</th></tr></thead>
+          <tbody>
+    <tr>
+      <td>MSP</td>
+      <td>54</td>
+      <td>93%<div class="bar"><div class="fill" style="width:93%"></div></div></td>
+    </tr>
+    <tr>
+      <td>Integrator</td>
+      <td>2</td>
+      <td>3%<div class="bar"><div class="fill" style="width:3%"></div></div></td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>2</td>
+      <td>3%<div class="bar"><div class="fill" style="width:3%"></div></div></td>
+    </tr></tbody>
+        </table>
+      </section>
+
+      <section class="wide">
+        <h2>Additional Facts</h2>
+        <div class="insights">
+          <div class="insight"><strong>9</strong><span>Contacts were created in Salesforce within 7 days of their Most Recent Conversion date.</span></div>
+          <div class="insight"><strong>33%</strong><span>Of Hot/Warm contacts have a Discovery Call after conversion.</span></div>
+          <div class="insight"><strong>26%</strong><span>Of Hot/Warm contacts are linked to a post-conversion opportunity.</span></div>
+        </div>
+      </section>
+
+      <section class="wide">
+        <h2>Cross-Sell Detail</h2>
+        <table>
+          <thead><tr><th>Account</th><th>Account Type</th><th>Opps</th><th>Amount</th></tr></thead>
+          <tbody>
+        <tr>
+          <td>Logic People</td>
+          <td>TigerPaw Client</td>
+          <td>1</td>
+          <td>$1,000</td>
+        </tr></tbody>
+        </table>
+      </section>
+
+      <section class="wide">
+        <h2>Contact Detail</h2>
+        <div class="controls">
+          <select id="statusFilter"><option value="">All Statuses</option><option>Hot Lead</option><option>Warm Lead</option></select>
+          <select id="discoveryFilter"><option value="">Discovery Call?</option><option value="yes">Yes</option><option value="no">No</option></select>
+          <select id="oppFilter"><option value="">Opportunity?</option><option value="yes">Yes</option><option value="no">No</option></select>
+          <select id="crossSellFilter"><option value="">Cross-Sell?</option><option value="yes">Yes</option><option value="no">No</option></select>
+          <select id="newFilter"><option value="">Brand New?</option><option value="yes">Yes</option><option value="no">No</option></select>
+          <input id="searchFilter" placeholder="Search contacts or accounts">
+        </div>
+        <div class="contacts-wrap">
+          <table class="contact-table">
+            <thead><tr><th data-sort="name">Contact</th><th data-sort="account">Account</th><th data-sort="status">Status</th><th data-sort="industry">Industry</th><th data-sort="vertical">Vertical</th><th data-sort="discoveryCalls">Discovery</th><th data-sort="opportunityCount">Opps</th><th data-sort="amount">Amount</th><th data-sort="crossSell">Cross-Sell</th><th data-sort="newInSalesforce">New</th></tr></thead>
+            <tbody id="contactBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">
+      Generated 2026-06-18 from Salesforce. Opportunity counts are unique opportunities linked through Opportunity Contact Role and created on or after the contact's Most Recent Conversion date. Cross-sell requires Account Type containing "Client" and a counted opportunity with Opportunity Marketing Source = Tradeshow and Marketing Sub-source = Pax8 Beyond 26.
+    </div>
+  </main>
+</article>
+<script>
+const CONTACTS = [{"name":"Abe Leichter","account":"Alpro Solutions","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Chris Dill","account":"BEL Network Integration & Support","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":true},{"name":"Roslyn Frazier","account":"Billings Tech Guys","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Pinchas Zerbib","account":"BSD Tech","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Mainak Roy","account":"Byte","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Daniel Johnson","account":"CallCorp","status":"Warm Lead","industry":"MSP - UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Dhaval Damania","account":"CISO Global, Inc.","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Mark Farberg","account":"Computers Nationwide","status":"Hot Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Tyler Shoemaker","account":"Computers Nationwide","status":"Hot Lead","industry":"MSP - Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Mat Kordell","account":"CyberStreams","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"TJ Rashid","account":"Data Network Group","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Will Reaves","account":"DKBinnovative","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Darren Cerullo","account":"DPC Tech","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Dustin Smith","account":"Eakes Office Solutions","status":"Warm Lead","industry":"Business Support Services","vertical":"Integrator","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Antwine Jackson","account":"Enitech Solutions","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Leonard Charles LLewellyn","account":"Entre Technology Services","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":true},{"name":"Matt Vondette","account":"Evergreen Computers","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Mark Mantei","account":"evolutiongroup.ca","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Erik Reimche","account":"Galactica CyberSecurity","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Kevin Labbé","account":"GC Brieau","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Rudy Araya","account":"Gestion TI Informatique","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Joshua Harry","account":"Global Data Systems, Inc","status":"Warm Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Lucas Winchowky","account":"GoTech LLC","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"William Kapes","account":"Integritek","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":true},{"name":"Heather Crawford","account":"IT Symmetry","status":"Hot Lead","industry":"MSP - No Voice","vertical":"Unknown","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Joe Crawford","account":"IT Symmetry","status":"Hot Lead","industry":"MSP - No Voice","vertical":"Unknown","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Jeremy Boykin","account":"ITNS","status":"Warm Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Cheri Newey","account":"Jatag Solutions","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Ellen Samuel","account":"Just-Tech, LLC","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Paul Whitney","account":"Logic People","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":true,"newInSalesforce":false},{"name":"Jeremy Prince","account":"Lyra - Iron Oak Technologies","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Boris Zlatogorov","account":"M.I.T. Consulting","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Pete Robbins","account":"MSP Blue Team","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Monica Minkel","account":"NetTech Colorado, LLC","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Samantha Tillotson","account":"Onboard Digital","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Craig Bell","account":"Onit","status":"Warm Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Shannan Stotler","account":"Overview Technology Solutions Inc","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":true},{"name":"Joe Esser","account":"Redbird Security LLC","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Michael Hamilton","account":"SavvyLogic","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Jason Ballard","account":"Sedona Technologies","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":true},{"name":"David Szpunar","account":"Servant 42","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Angie Gage","account":"Silloway Networks","status":"Warm Lead","industry":"Other","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Jason Simpson","account":"Simply Support Inc.","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Rudy Michelon","account":"Skyriver IT","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Levi Robinson","account":"Solid Networks","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":true},{"name":"Nathan Cook","account":"Solve4 LLC","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Sachin Agrawal","account":"Tarika Group","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Ben Neighbour","account":"TECHD Group","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Tyler Parkhurst","account":"Technik LLC","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Kevin Greenwood","account":"The AME Group","status":"Warm Lead","industry":"MSP - Voice","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Joseph Simuro","account":"The Data Pros","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false},{"name":"Alan Doyle","account":"The Nerd Stuff","status":"Warm Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Lee Bliven","account":"The Nerd Stuff","status":"Hot Lead","industry":"UCaaS / Voip","vertical":"MSP","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"Jim Thrall","account":"Twin Harbors Technology Solutions","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":true},{"name":"Mathieu Huneault","account":"UNNO inc.","status":"Warm Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":true},{"name":"Travis Jones","account":"Uptime.com","status":"Warm Lead","industry":"Security Integrator","vertical":"Integrator","discoveryCalls":0,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":false},{"name":"David Allred","account":"Vigilant IT","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":0,"amount":0,"crossSell":false,"newInSalesforce":true},{"name":"Cody Grace","account":"Waypoint Digital Networks","status":"Hot Lead","industry":"MSP - No Voice","vertical":"MSP","discoveryCalls":1,"opportunityCount":1,"amount":1000,"crossSell":false,"newInSalesforce":false}];
+let sortKey = 'account';
+let sortDir = 1;
+
+function money(value) {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value || 0);
+}
+
+function yesNo(value) {
+  return value ? 'Yes' : 'No';
+}
+
+function getFilteredContacts() {
+  const status = document.getElementById('statusFilter').value;
+  const discovery = document.getElementById('discoveryFilter').value;
+  const opp = document.getElementById('oppFilter').value;
+  const crossSell = document.getElementById('crossSellFilter').value;
+  const isNew = document.getElementById('newFilter').value;
+  const search = document.getElementById('searchFilter').value.toLowerCase();
+  return CONTACTS.filter((contact) => {
+    if (status && contact.status !== status) return false;
+    if (discovery && contact.discoveryCalls > 0 !== (discovery === 'yes')) return false;
+    if (opp && contact.opportunityCount > 0 !== (opp === 'yes')) return false;
+    if (crossSell && contact.crossSell !== (crossSell === 'yes')) return false;
+    if (isNew && contact.newInSalesforce !== (isNew === 'yes')) return false;
+    if (search) {
+      const haystack = [contact.name, contact.account, contact.industry, contact.vertical].join(' ').toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+    return true;
+  }).sort((left, right) => {
+    const leftValue = left[sortKey];
+    const rightValue = right[sortKey];
+    if (typeof leftValue === 'number' || typeof rightValue === 'number') return ((leftValue || 0) - (rightValue || 0)) * sortDir;
+    return String(leftValue || '').localeCompare(String(rightValue || '')) * sortDir;
+  });
+}
+
+function renderContacts() {
+  const rows = getFilteredContacts();
+  document.getElementById('contactBody').innerHTML = rows.map((contact) => (
+    '<tr>' +
+    '<td>' + contact.name + '</td>' +
+    '<td>' + contact.account + '</td>' +
+    '<td>' + contact.status + '</td>' +
+    '<td>' + contact.industry + '</td>' +
+    '<td>' + contact.vertical + '</td>' +
+    '<td>' + contact.discoveryCalls + '</td>' +
+    '<td>' + contact.opportunityCount + '</td>' +
+    '<td>' + money(contact.amount) + '</td>' +
+    '<td>' + yesNo(contact.crossSell) + '</td>' +
+    '<td>' + yesNo(contact.newInSalesforce) + '</td>' +
+    '</tr>'
+  )).join('') || '<tr><td colspan="10" class="muted">No contacts match the selected filters.</td></tr>';
+}
+
+document.querySelectorAll('.controls select, .controls input').forEach((input) => input.addEventListener('input', renderContacts));
+document.querySelectorAll('.contact-table th').forEach((header) => {
+  header.addEventListener('click', () => {
+    const nextSort = header.dataset.sort;
+    sortDir = sortKey === nextSort ? sortDir * -1 : 1;
+    sortKey = nextSort;
+    renderContacts();
+  });
+});
+renderContacts();
+</script>
+</body>
+</html>
