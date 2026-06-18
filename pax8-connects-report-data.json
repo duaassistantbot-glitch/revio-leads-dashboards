@@ -5,14 +5,14 @@
   "rsvpYesCount": 95,
   "attendedCount": 64,
   "noEmailCount": 13,
-  "matchedCount": 93,
-  "unmatchedCount": 18,
+  "matchedCount": 97,
+  "unmatchedCount": 14,
   "clientCount": 8,
-  "prospectCount": 85,
+  "prospectCount": 89,
   "industryBreakdown": [
     {
       "name": "MSP - No Voice",
-      "count": 73
+      "count": 76
     },
     {
       "name": "MSP - Voice",
@@ -20,7 +20,7 @@
     },
     {
       "name": "UCaaS / Voip",
-      "count": 5
+      "count": 6
     },
     {
       "name": "SaaS / Other",
@@ -42,7 +42,7 @@
   "verticalBreakdown": [
     {
       "name": "MSP",
-      "count": 90
+      "count": 94
     },
     {
       "name": "Integrator",
@@ -53,9 +53,9 @@
       "count": 1
     }
   ],
-  "opportunityCount": 3,
-  "totalAmount": 3000,
-  "averageAmount": 1000,
+  "opportunityCount": 4,
+  "totalAmount": 3050,
+  "averageAmount": 762.5,
   "crossSellCount": 1,
   "attendeeDetails": [
     {
@@ -70,21 +70,23 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Aaron Frasier",
       "company": "American Technology Specialists",
       "attended": "Yes",
       "rsvpStatus": "Unknown",
-      "segment": "Unmatched",
-      "accountType": "Unknown",
-      "industry": "Unknown",
-      "vertical": "Unknown",
+      "segment": "Prospect",
+      "accountType": "Cold Prospect",
+      "industry": "MSP - No Voice",
+      "vertical": "MSP",
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": true,
+      "matchedBy": "Name"
     },
     {
       "name": "Jennifer FitzHarris",
@@ -98,7 +100,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "John Jordan",
@@ -112,7 +115,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Chris Jordan",
@@ -126,7 +130,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jaswanth Gaddam",
@@ -140,7 +145,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Matthew Bauer",
@@ -154,7 +160,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Chris Bowden-Hawkins",
@@ -168,7 +175,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Scott Walters",
@@ -182,7 +190,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Cole Blake",
@@ -196,7 +205,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Douglas Bradshaw",
@@ -210,7 +220,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jaime Rodriguez",
@@ -224,7 +235,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Stuart Hentschel",
@@ -238,7 +250,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Carmen Parra",
@@ -252,21 +265,23 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Quincy Grigson",
       "company": "Conduit Technical Services",
       "attended": "Yes",
       "rsvpStatus": "Yes",
-      "segment": "Unmatched",
-      "accountType": "Unknown",
-      "industry": "Unknown",
-      "vertical": "Unknown",
+      "segment": "Prospect",
+      "accountType": "Cold Prospect",
+      "industry": "MSP - No Voice",
+      "vertical": "MSP",
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": true,
+      "matchedBy": "Name"
     },
     {
       "name": "Josh Rogers",
@@ -280,7 +295,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Richard Crancer",
@@ -294,7 +310,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Donnie Cunningham",
@@ -308,7 +325,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jeff Peterman",
@@ -322,7 +340,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "CJ Fairfield",
@@ -336,7 +355,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Chris White",
@@ -350,7 +370,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "James Martin",
@@ -364,7 +385,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jeannine Martin",
@@ -378,7 +400,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Andrew Trudgeon",
@@ -392,7 +415,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jeff Wong",
@@ -406,7 +430,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Darren Cerullo",
@@ -420,7 +445,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Antwine Jackson",
@@ -434,7 +460,8 @@
       "opportunityCount": 1,
       "amount": 1000,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Adam Tubbs",
@@ -448,7 +475,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "James Wright",
@@ -462,7 +490,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Steve Petty",
@@ -476,7 +505,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Steve Johnson",
@@ -490,7 +520,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Ali Tubbs Amato",
@@ -504,7 +535,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Becky Cross",
@@ -518,7 +550,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Fred Franks",
@@ -532,7 +565,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jen Haberman",
@@ -546,7 +580,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Nabil Aitoumeziane",
@@ -560,7 +595,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Carmen Kraft",
@@ -574,7 +610,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jack Wu",
@@ -588,7 +625,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jason Collins",
@@ -602,7 +640,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Dan Wensley",
@@ -616,7 +655,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Joe Pannone",
@@ -630,7 +670,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Michelle Cook",
@@ -644,7 +685,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Craig Vickers",
@@ -658,7 +700,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "MJ Shoer",
@@ -672,7 +715,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Scott Campbell",
@@ -686,7 +730,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Stacy Whitley",
@@ -700,7 +745,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Jacob Guenther",
@@ -714,7 +760,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Ben Guenther",
@@ -728,7 +775,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Theresa Bethune",
@@ -742,7 +790,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Thomas Bethune",
@@ -756,7 +805,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Dan Gilligan",
@@ -770,7 +820,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Terry Soltzberg",
@@ -784,7 +835,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jennifer Gilligan",
@@ -798,7 +850,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Kevin Damghani",
@@ -812,7 +865,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Thomas Bethune IV",
@@ -826,7 +880,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Abiola Smith",
@@ -840,7 +895,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Ernie Sherman",
@@ -854,7 +910,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jason Brown",
@@ -868,7 +925,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "John Robinson",
@@ -882,7 +940,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Phil Dragonetti",
@@ -896,7 +955,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Richard Greenwood",
@@ -910,7 +970,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Brian Carline",
@@ -924,7 +985,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Chris Sanchez",
@@ -938,7 +1000,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Danny Kazmarek",
@@ -952,7 +1015,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Robert Masterson",
@@ -966,7 +1030,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Paul Whitney",
@@ -977,10 +1042,11 @@
       "accountType": "TigerPaw Client",
       "industry": "MSP - No Voice",
       "vertical": "MSP",
-      "opportunityCount": 1,
-      "amount": 1000,
+      "opportunityCount": 2,
+      "amount": 1050,
       "crossSell": true,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Boris Zlatogorov",
@@ -994,7 +1060,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Erez Zevulunov",
@@ -1008,7 +1075,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Brian Cox",
@@ -1022,7 +1090,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Joel Charters",
@@ -1036,21 +1105,23 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Sandy McGrath",
       "company": "MIP Global",
       "attended": "No",
       "rsvpStatus": "Yes",
-      "segment": "Unmatched",
-      "accountType": "Unknown",
-      "industry": "Unknown",
-      "vertical": "Unknown",
+      "segment": "Prospect",
+      "accountType": "Cold Prospect",
+      "industry": "MSP - No Voice",
+      "vertical": "MSP",
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": true,
+      "matchedBy": "Name"
     },
     {
       "name": "Jessica Lawther",
@@ -1064,7 +1135,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Angie Robbins",
@@ -1078,7 +1150,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Pete Robbins",
@@ -1092,7 +1165,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "TBD",
@@ -1106,7 +1180,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Hank Dallam",
@@ -1120,7 +1195,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "TBD",
@@ -1134,7 +1210,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Zach Launey",
@@ -1148,7 +1225,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "TBD",
@@ -1162,7 +1240,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "TBD",
@@ -1176,7 +1255,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "TBD",
@@ -1190,7 +1270,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Bob Cox",
@@ -1204,7 +1285,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jennifer Roy",
@@ -1218,7 +1300,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Robert Cioffi",
@@ -1232,7 +1315,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Clint Fielding",
@@ -1246,7 +1330,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Denise Palmer",
@@ -1260,7 +1345,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Karl Fulljames",
@@ -1274,21 +1360,23 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Frank Turechek",
       "company": "ReGenerating Solutions Inc",
       "attended": "No",
       "rsvpStatus": "Yes",
-      "segment": "Unmatched",
-      "accountType": "Unknown",
-      "industry": "Unknown",
-      "vertical": "Unknown",
+      "segment": "Prospect",
+      "accountType": "Cold Prospect",
+      "industry": "UCaaS / Voip",
+      "vertical": "MSP",
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": true,
+      "matchedBy": "Name"
     },
     {
       "name": "Marvin Ekk",
@@ -1302,7 +1390,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Abdul Malik",
@@ -1316,7 +1405,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Josh Wendt",
@@ -1330,7 +1420,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Henry Timm",
@@ -1344,7 +1435,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Nyasha Tunduwani",
@@ -1358,7 +1450,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Michael Hamilton",
@@ -1372,7 +1465,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     },
     {
       "name": "Bader Hamdan",
@@ -1386,7 +1480,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Miranda Gladney",
@@ -1400,7 +1495,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Peter Garland",
@@ -1414,7 +1510,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Paul Blake",
@@ -1428,7 +1525,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Michael Hamilton",
@@ -1442,7 +1540,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Casey Martin",
@@ -1456,7 +1555,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Fred Beebe",
@@ -1470,7 +1570,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Matt Vincent",
@@ -1484,7 +1585,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Keith Nelson",
@@ -1498,7 +1600,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Katherine Gray",
@@ -1512,7 +1615,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Tom Bastinelli",
@@ -1526,7 +1630,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Brent Williams",
@@ -1540,7 +1645,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Kevin Greenwood",
@@ -1554,7 +1660,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Joseph (Joe) Simuro",
@@ -1568,7 +1675,8 @@
       "opportunityCount": 1,
       "amount": 1000,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Travis Joyner",
@@ -1582,7 +1690,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Matt Hughes",
@@ -1596,7 +1705,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": true
+      "matched": true,
+      "matchedBy": "Email"
     },
     {
       "name": "Jennie Johnson",
@@ -1610,7 +1720,8 @@
       "opportunityCount": 0,
       "amount": 0,
       "crossSell": false,
-      "matched": false
+      "matched": false,
+      "matchedBy": ""
     }
   ]
 }
