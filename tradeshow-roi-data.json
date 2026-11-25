@@ -1,5 +1,5 @@
 {
-  "refreshed": "2026-11-25T13:36:41.080Z",
+  "refreshed": "2026-11-25T13:46:20.290Z",
   "filters": {
     "contactSource": "Tradeshow",
     "subSource": "contains 26",
@@ -42,6 +42,8 @@
       "bookedDemo": {
         "No": 23
       },
+      "hotWarmCreated2026": 2,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 5,
       "existing": 18,
       "opportunities": [
@@ -577,6 +579,8 @@
       "bookedDemo": {
         "No": 7
       },
+      "hotWarmCreated2026": 1,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 3,
       "existing": 4,
       "opportunities": [
@@ -664,6 +668,8 @@
       "bookedDemo": {
         "No": 17
       },
+      "hotWarmCreated2026": 10,
+      "hotWarmCreated2026Sql": 7,
       "created2026": 12,
       "existing": 5,
       "opportunities": [
@@ -1110,6 +1116,8 @@
         "No": 5,
         "Yes": 1
       },
+      "hotWarmCreated2026": 4,
+      "hotWarmCreated2026Sql": 3,
       "created2026": 4,
       "existing": 2,
       "opportunities": [
@@ -1240,6 +1248,8 @@
       "bookedDemo": {
         "No": 6
       },
+      "hotWarmCreated2026": 2,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 5,
       "existing": 1,
       "opportunities": [
@@ -1322,6 +1332,8 @@
       "bookedDemo": {
         "No": 8
       },
+      "hotWarmCreated2026": 1,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 5,
       "existing": 3,
       "opportunities": [
@@ -1408,6 +1420,8 @@
       "bookedDemo": {
         "No": 5
       },
+      "hotWarmCreated2026": 1,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 3,
       "existing": 2,
       "opportunities": [],
@@ -1449,6 +1463,8 @@
         "No": 14,
         "Yes": 1
       },
+      "hotWarmCreated2026": 7,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 12,
       "existing": 3,
       "opportunities": [
@@ -1582,6 +1598,8 @@
       "bookedDemo": {
         "No": 20
       },
+      "hotWarmCreated2026": 5,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 19,
       "existing": 1,
       "opportunities": [
@@ -1708,6 +1726,8 @@
       "bookedDemo": {
         "No": 3
       },
+      "hotWarmCreated2026": 0,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 1,
       "existing": 2,
       "opportunities": [
@@ -1889,6 +1909,8 @@
         "No": 114,
         "Yes": 4
       },
+      "hotWarmCreated2026": 33,
+      "hotWarmCreated2026Sql": 10,
       "created2026": 97,
       "existing": 21,
       "opportunities": [
@@ -2433,6 +2455,8 @@
         "No": 43,
         "Yes": 4
       },
+      "hotWarmCreated2026": 9,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 17,
       "existing": 30,
       "opportunities": [
@@ -3155,6 +3179,8 @@
         "No": 20,
         "Yes": 1
       },
+      "hotWarmCreated2026": 14,
+      "hotWarmCreated2026Sql": 5,
       "created2026": 15,
       "existing": 6,
       "opportunities": [
@@ -3423,6 +3449,8 @@
       "bookedDemo": {
         "No": 45
       },
+      "hotWarmCreated2026": 3,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 21,
       "existing": 24,
       "opportunities": [
@@ -3644,6 +3672,8 @@
       "bookedDemo": {
         "No": 14
       },
+      "hotWarmCreated2026": 8,
+      "hotWarmCreated2026Sql": 7,
       "created2026": 8,
       "existing": 6,
       "opportunities": [
@@ -4092,6 +4122,8 @@
         "No": 12,
         "Yes": 1
       },
+      "hotWarmCreated2026": 11,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 11,
       "existing": 2,
       "opportunities": [
@@ -4264,6 +4296,8 @@
       "bookedDemo": {
         "No": 2
       },
+      "hotWarmCreated2026": 1,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 1,
       "existing": 1,
       "opportunities": [],
@@ -4303,6 +4337,8 @@
       "bookedDemo": {
         "No": 23
       },
+      "hotWarmCreated2026": 17,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 19,
       "existing": 4,
       "opportunities": [
@@ -4388,6 +4424,8 @@
       "bookedDemo": {
         "No": 4
       },
+      "hotWarmCreated2026": 0,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 0,
       "existing": 4,
       "opportunities": [
@@ -4479,6 +4517,8 @@
       "bookedDemo": {
         "No": 108
       },
+      "hotWarmCreated2026": 28,
+      "hotWarmCreated2026Sql": 8,
       "created2026": 98,
       "existing": 10,
       "opportunities": [
@@ -4973,6 +5013,8 @@
         "No": 65,
         "Yes": 2
       },
+      "hotWarmCreated2026": 9,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 57,
       "existing": 10,
       "opportunities": [
@@ -5066,6 +5108,8 @@
         "No": 54,
         "Yes": 23
       },
+      "hotWarmCreated2026": 46,
+      "hotWarmCreated2026Sql": 16,
       "created2026": 48,
       "existing": 29,
       "opportunities": [
@@ -6776,6 +6820,8 @@
         "No": 140,
         "Yes": 18
       },
+      "hotWarmCreated2026": 41,
+      "hotWarmCreated2026Sql": 11,
       "created2026": 113,
       "existing": 45,
       "opportunities": [
@@ -7139,6 +7185,8 @@
       "bookedDemo": {
         "No": 24
       },
+      "hotWarmCreated2026": 9,
+      "hotWarmCreated2026Sql": 4,
       "created2026": 14,
       "existing": 10,
       "opportunities": [
@@ -7548,6 +7596,8 @@
         "Yes": 2,
         "No": 51
       },
+      "hotWarmCreated2026": 23,
+      "hotWarmCreated2026Sql": 3,
       "created2026": 39,
       "existing": 14,
       "opportunities": [
@@ -7777,6 +7827,8 @@
         "No": 58,
         "Yes": 3
       },
+      "hotWarmCreated2026": 15,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 48,
       "existing": 13,
       "opportunities": [
@@ -8271,6 +8323,8 @@
       "bookedDemo": {
         "No": 20
       },
+      "hotWarmCreated2026": 8,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 13,
       "existing": 7,
       "opportunities": [
@@ -8360,6 +8414,8 @@
         "Yes": 1,
         "No": 5
       },
+      "hotWarmCreated2026": 3,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 4,
       "existing": 2,
       "opportunities": [
@@ -8496,6 +8552,8 @@
         "No": 62,
         "Yes": 6
       },
+      "hotWarmCreated2026": 15,
+      "hotWarmCreated2026Sql": 5,
       "created2026": 52,
       "existing": 16,
       "opportunities": [
@@ -8680,6 +8738,8 @@
         "No": 91,
         "Yes": 20
       },
+      "hotWarmCreated2026": 42,
+      "hotWarmCreated2026Sql": 12,
       "created2026": 73,
       "existing": 38,
       "opportunities": [
@@ -9345,6 +9405,8 @@
       "bookedDemo": {
         "No": 2
       },
+      "hotWarmCreated2026": 0,
+      "hotWarmCreated2026Sql": 0,
       "created2026": 2,
       "existing": 0,
       "opportunities": [
@@ -9434,6 +9496,8 @@
       "bookedDemo": {
         "No": 28
       },
+      "hotWarmCreated2026": 7,
+      "hotWarmCreated2026Sql": 4,
       "created2026": 23,
       "existing": 5,
       "opportunities": [
@@ -9751,6 +9815,8 @@
         "No": 24,
         "Yes": 1
       },
+      "hotWarmCreated2026": 4,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 4,
       "existing": 21,
       "opportunities": [
@@ -10520,6 +10586,8 @@
         "No": 51,
         "Yes": 12
       },
+      "hotWarmCreated2026": 30,
+      "hotWarmCreated2026Sql": 10,
       "created2026": 38,
       "existing": 25,
       "opportunities": [
@@ -11326,6 +11394,8 @@
         "Yes": 1,
         "No": 10
       },
+      "hotWarmCreated2026": 4,
+      "hotWarmCreated2026Sql": 1,
       "created2026": 7,
       "existing": 4,
       "opportunities": [
@@ -11415,6 +11485,8 @@
         "No": 14,
         "Yes": 1
       },
+      "hotWarmCreated2026": 12,
+      "hotWarmCreated2026Sql": 2,
       "created2026": 13,
       "existing": 2,
       "opportunities": [
