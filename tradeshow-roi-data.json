@@ -1,5 +1,5 @@
 {
-  "refreshed": "2026-11-25T13:27:17.300Z",
+  "refreshed": "2026-11-25T13:36:41.080Z",
   "filters": {
     "contactSource": "Tradeshow",
     "subSource": "contains 26",
@@ -30,7 +30,7 @@
       "contactStatuses": {
         "SQL": 9,
         "Client": 2,
-        "(blank)": 1,
+        "Lead": 1,
         "MQL": 11
       },
       "recycledReasons": {
@@ -40,8 +40,7 @@
       },
       "recycledReasonCount": 13,
       "bookedDemo": {
-        "(blank)": 22,
-        "No": 1
+        "No": 23
       },
       "created2026": 5,
       "existing": 18,
@@ -569,15 +568,14 @@
         "Client Request": 1
       },
       "contactStatuses": {
-        "(blank)": 3,
+        "Lead": 3,
         "SQL": 3,
         "Client": 1
       },
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
-        "(blank)": 6,
-        "No": 1
+        "No": 7
       },
       "created2026": 3,
       "existing": 4,
@@ -664,7 +662,7 @@
       },
       "recycledReasonCount": 7,
       "bookedDemo": {
-        "(blank)": 17
+        "No": 17
       },
       "created2026": 12,
       "existing": 5,
@@ -1109,8 +1107,7 @@
       },
       "recycledReasonCount": 1,
       "bookedDemo": {
-        "No": 3,
-        "(blank)": 2,
+        "No": 5,
         "Yes": 1
       },
       "created2026": 4,
@@ -1232,7 +1229,7 @@
         "Cold Lead": 3
       },
       "contactStatuses": {
-        "(blank)": 3,
+        "Lead": 3,
         "MQL": 2,
         "SQL": 1
       },
@@ -1317,14 +1314,13 @@
         "Warm Lead": 3
       },
       "contactStatuses": {
-        "(blank)": 7,
+        "Lead": 7,
         "SQL": 1
       },
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
-        "No": 7,
-        "(blank)": 1
+        "No": 8
       },
       "created2026": 5,
       "existing": 3,
@@ -1401,7 +1397,7 @@
         "Warm Lead": 1
       },
       "contactStatuses": {
-        "(blank)": 2,
+        "Lead": 2,
         "MQL": 2,
         "Partner": 1
       },
@@ -1450,8 +1446,7 @@
       },
       "recycledReasonCount": 6,
       "bookedDemo": {
-        "No": 5,
-        "(blank)": 9,
+        "No": 14,
         "Yes": 1
       },
       "created2026": 12,
@@ -1574,7 +1569,7 @@
         "Warm Lead": 2
       },
       "contactStatuses": {
-        "(blank)": 13,
+        "Lead": 13,
         "SQL": 2,
         "MQL": 5
       },
@@ -1585,8 +1580,7 @@
       },
       "recycledReasonCount": 3,
       "bookedDemo": {
-        "(blank)": 19,
-        "No": 1
+        "No": 20
       },
       "created2026": 19,
       "existing": 1,
@@ -1706,13 +1700,13 @@
         "Cold Lead": 3
       },
       "contactStatuses": {
-        "(blank)": 2,
+        "Lead": 2,
         "SQL": 1
       },
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
-        "(blank)": 3
+        "No": 3
       },
       "created2026": 1,
       "existing": 2,
@@ -1879,7 +1873,7 @@
         "Warm Lead": 32
       },
       "contactStatuses": {
-        "(blank)": 58,
+        "Lead": 58,
         "SQL": 16,
         "MQL": 44
       },
@@ -1892,8 +1886,7 @@
       },
       "recycledReasonCount": 17,
       "bookedDemo": {
-        "No": 78,
-        "(blank)": 36,
+        "No": 114,
         "Yes": 4
       },
       "created2026": 97,
@@ -2424,7 +2417,7 @@
       "contactStatuses": {
         "MQL": 14,
         "SQL": 20,
-        "(blank)": 4,
+        "Lead": 4,
         "Disqualified": 5,
         "Partner": 4
       },
@@ -2437,8 +2430,7 @@
       },
       "recycledReasonCount": 18,
       "bookedDemo": {
-        "No": 26,
-        "(blank)": 17,
+        "No": 43,
         "Yes": 4
       },
       "created2026": 17,
@@ -3152,7 +3144,7 @@
         "MQL": 12,
         "Client": 1,
         "SQL": 6,
-        "(blank)": 2
+        "Lead": 2
       },
       "recycledReasons": {
         "In a contract": 2,
@@ -3160,9 +3152,8 @@
       },
       "recycledReasonCount": 8,
       "bookedDemo": {
-        "(blank)": 14,
-        "Yes": 1,
-        "No": 6
+        "No": 20,
+        "Yes": 1
       },
       "created2026": 15,
       "existing": 6,
@@ -3421,7 +3412,7 @@
       },
       "contactStatuses": {
         "MQL": 13,
-        "(blank)": 24,
+        "Lead": 24,
         "SQL": 8
       },
       "recycledReasons": {
@@ -3430,7 +3421,7 @@
       },
       "recycledReasonCount": 2,
       "bookedDemo": {
-        "(blank)": 45
+        "No": 45
       },
       "created2026": 21,
       "existing": 24,
@@ -3651,7 +3642,7 @@
       },
       "recycledReasonCount": 7,
       "bookedDemo": {
-        "(blank)": 14
+        "No": 14
       },
       "created2026": 8,
       "existing": 6,
@@ -4265,13 +4256,13 @@
         "Cold Lead": 1
       },
       "contactStatuses": {
-        "(blank)": 1,
+        "Lead": 1,
         "SQL": 1
       },
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
-        "(blank)": 2
+        "No": 2
       },
       "created2026": 1,
       "existing": 1,
@@ -4310,7 +4301,7 @@
       },
       "recycledReasonCount": 3,
       "bookedDemo": {
-        "(blank)": 23
+        "No": 23
       },
       "created2026": 19,
       "existing": 4,
@@ -4395,7 +4386,7 @@
       },
       "recycledReasonCount": 3,
       "bookedDemo": {
-        "(blank)": 4
+        "No": 4
       },
       "created2026": 0,
       "existing": 4,
@@ -4475,7 +4466,7 @@
       "contactStatuses": {
         "MQL": 3,
         "Client": 1,
-        "(blank)": 92,
+        "Lead": 92,
         "SQL": 11,
         "Disqualified": 1
       },
@@ -4486,7 +4477,7 @@
       },
       "recycledReasonCount": 7,
       "bookedDemo": {
-        "(blank)": 108
+        "No": 108
       },
       "created2026": 98,
       "existing": 10,
@@ -4969,7 +4960,7 @@
       },
       "contactStatuses": {
         "SQL": 7,
-        "(blank)": 50,
+        "Lead": 50,
         "MQL": 9,
         "Disqualified": 1
       },
@@ -4979,8 +4970,7 @@
       },
       "recycledReasonCount": 4,
       "bookedDemo": {
-        "(blank)": 42,
-        "No": 23,
+        "No": 65,
         "Yes": 2
       },
       "created2026": 57,
@@ -5062,7 +5052,7 @@
         "MQL": 23,
         "SQL": 37,
         "Disqualified": 5,
-        "(blank)": 10,
+        "Lead": 10,
         "Partner": 2
       },
       "recycledReasons": {
@@ -5073,9 +5063,8 @@
       },
       "recycledReasonCount": 28,
       "bookedDemo": {
-        "No": 44,
-        "Yes": 23,
-        "(blank)": 10
+        "No": 54,
+        "Yes": 23
       },
       "created2026": 48,
       "existing": 29,
@@ -6773,7 +6762,7 @@
         "Warm Lead": 40
       },
       "contactStatuses": {
-        "(blank)": 76,
+        "Lead": 76,
         "MQL": 54,
         "SQL": 25,
         "Disqualified": 3
@@ -6784,8 +6773,7 @@
       },
       "recycledReasonCount": 20,
       "bookedDemo": {
-        "(blank)": 24,
-        "No": 116,
+        "No": 140,
         "Yes": 18
       },
       "created2026": 113,
@@ -7138,7 +7126,7 @@
       "contactStatuses": {
         "SQL": 7,
         "MQL": 6,
-        "(blank)": 6,
+        "Lead": 6,
         "Partner": 3,
         "Disqualified": 2
       },
@@ -7149,8 +7137,7 @@
       },
       "recycledReasonCount": 7,
       "bookedDemo": {
-        "(blank)": 23,
-        "No": 1
+        "No": 24
       },
       "created2026": 14,
       "existing": 10,
@@ -7545,7 +7532,7 @@
       },
       "contactStatuses": {
         "MQL": 27,
-        "(blank)": 12,
+        "Lead": 12,
         "SQL": 7,
         "Disqualified": 6,
         "Partner": 1
@@ -7559,8 +7546,7 @@
       "recycledReasonCount": 29,
       "bookedDemo": {
         "Yes": 2,
-        "No": 42,
-        "(blank)": 9
+        "No": 51
       },
       "created2026": 39,
       "existing": 14,
@@ -7775,7 +7761,7 @@
       },
       "contactStatuses": {
         "MQL": 43,
-        "(blank)": 2,
+        "Lead": 2,
         "Partner": 4,
         "Disqualified": 4,
         "SQL": 8
@@ -7788,8 +7774,7 @@
       },
       "recycledReasonCount": 20,
       "bookedDemo": {
-        "(blank)": 31,
-        "No": 27,
+        "No": 58,
         "Yes": 3
       },
       "created2026": 48,
@@ -8284,8 +8269,7 @@
       },
       "recycledReasonCount": 5,
       "bookedDemo": {
-        "(blank)": 19,
-        "No": 1
+        "No": 20
       },
       "created2026": 13,
       "existing": 7,
@@ -8364,7 +8348,7 @@
       "contactStatuses": {
         "SQL": 3,
         "MQL": 2,
-        "(blank)": 1
+        "Lead": 1
       },
       "recycledReasons": {
         "Too small": 1,
@@ -8374,8 +8358,7 @@
       "recycledReasonCount": 5,
       "bookedDemo": {
         "Yes": 1,
-        "No": 4,
-        "(blank)": 1
+        "No": 5
       },
       "created2026": 4,
       "existing": 2,
@@ -8497,10 +8480,9 @@
         "Hot Lead": 6
       },
       "contactStatuses": {
-        "(blank)": 39,
+        "Lead": 40,
         "MQL": 23,
-        "SQL": 5,
-        "Lead": 1
+        "SQL": 5
       },
       "recycledReasons": {
         "Too small": 2,
@@ -8511,9 +8493,8 @@
       },
       "recycledReasonCount": 15,
       "bookedDemo": {
-        "(blank)": 3,
-        "Yes": 6,
-        "No": 59
+        "No": 62,
+        "Yes": 6
       },
       "created2026": 52,
       "existing": 16,
@@ -8681,11 +8662,10 @@
         "Hot Lead": 21
       },
       "contactStatuses": {
-        "Lead": 49,
+        "Lead": 50,
         "SQL": 19,
         "MQL": 39,
         "Client": 2,
-        "(blank)": 1,
         "Disqualified": 1
       },
       "recycledReasons": {
@@ -8697,8 +8677,7 @@
       },
       "recycledReasonCount": 61,
       "bookedDemo": {
-        "(blank)": 51,
-        "No": 40,
+        "No": 91,
         "Yes": 20
       },
       "created2026": 73,
@@ -9364,7 +9343,7 @@
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
-        "(blank)": 2
+        "No": 2
       },
       "created2026": 2,
       "existing": 0,
@@ -9441,7 +9420,7 @@
         "Hot Lead": 4
       },
       "contactStatuses": {
-        "(blank)": 17,
+        "Lead": 17,
         "MQL": 4,
         "SQL": 6,
         "Disqualified": 1
@@ -9453,8 +9432,7 @@
       },
       "recycledReasonCount": 5,
       "bookedDemo": {
-        "No": 16,
-        "(blank)": 12
+        "No": 28
       },
       "created2026": 23,
       "existing": 5,
@@ -9760,7 +9738,7 @@
         "SQL": 14,
         "MQL": 9,
         "Disqualified": 1,
-        "(blank)": 1
+        "Lead": 1
       },
       "recycledReasons": {
         "In a contract": 3,
@@ -9770,8 +9748,7 @@
       },
       "recycledReasonCount": 13,
       "bookedDemo": {
-        "No": 6,
-        "(blank)": 18,
+        "No": 24,
         "Yes": 1
       },
       "created2026": 4,
@@ -10527,7 +10504,7 @@
       },
       "contactStatuses": {
         "MQL": 30,
-        "(blank)": 12,
+        "Lead": 12,
         "SQL": 15,
         "Partner": 4,
         "Disqualified": 2
@@ -10540,9 +10517,8 @@
       },
       "recycledReasonCount": 54,
       "bookedDemo": {
-        "No": 50,
-        "Yes": 12,
-        "(blank)": 1
+        "No": 51,
+        "Yes": 12
       },
       "created2026": 38,
       "existing": 25,
@@ -11341,15 +11317,14 @@
         "Hot Lead": 2
       },
       "contactStatuses": {
-        "(blank)": 8,
+        "Lead": 8,
         "SQL": 3
       },
       "recycledReasons": {},
       "recycledReasonCount": 0,
       "bookedDemo": {
         "Yes": 1,
-        "No": 9,
-        "(blank)": 1
+        "No": 10
       },
       "created2026": 7,
       "existing": 4,
@@ -11426,7 +11401,7 @@
         "Cold Lead": 1
       },
       "contactStatuses": {
-        "(blank)": 12,
+        "Lead": 12,
         "SQL": 3
       },
       "recycledReasons": {
